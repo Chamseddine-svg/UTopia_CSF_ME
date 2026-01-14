@@ -12,13 +12,15 @@ def test_products_navigation_and_verification():
     options = Options()
     options.binary_location = "/usr/bin/chromium-browser"
    
-    options.add_argument("----headless=new") 
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
+    options.add_argument("--headless=new")          
+    options.add_argument("--no-sandbox")            
+    options.add_argument("--disable-dev-shm-usage") 
+    options.add_argument("--disable-gpu")           
+    options.add_argument("--window-size=1920,1080") 
+
 
     driver = webdriver.Chrome(options=options)
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 20)
 
     try:
         # ---------- 1. Login ----------
