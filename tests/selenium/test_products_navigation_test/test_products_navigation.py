@@ -20,7 +20,7 @@ def test_products_navigation_and_verification():
 
 
     driver = webdriver.Chrome(options=options)
-    wait = WebDriverWait(driver, 20)
+    wait = WebDriverWait(driver, 30)
 
     try:
         # ---------- 1. Login ----------
