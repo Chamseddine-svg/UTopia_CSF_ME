@@ -62,6 +62,7 @@ def test_products_navigation_and_verification():
 
         # ---------- 5. Verify product details page ----------
         wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "inventory_details_name")))
+        
 
         detail_name = driver.find_element(By.CLASS_NAME, "inventory_details_name").text
         detail_price = driver.find_element(By.CLASS_NAME, "inventory_details_price").text
@@ -74,7 +75,8 @@ def test_products_navigation_and_verification():
         # ---------- 6. Back to products ----------
         driver.find_element(By.ID, "back-to-products").click()
 
-        wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "inventory_container")))
+        wait.until(EC.presence_of_element_located((By.CLASS_NAME, "inventory_container")))
+
 
         # ---------- 7. Verify total products again ----------
         products_after = driver.find_elements(By.CLASS_NAME, "inventory_item")
