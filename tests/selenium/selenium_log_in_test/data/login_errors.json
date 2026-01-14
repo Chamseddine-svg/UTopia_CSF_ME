@@ -1,22 +1,6 @@
 [
-  {
-    "case": "valid_user_1",
-    "username": "standard_user",
-    "password": "secret_sauce",
-    "expected_error": "Epic sadface: Username and password do not match any user in this service"
-  },
-  {
-    "case": "valid_user_2",
-    "username": "standard_user",
-    "password": "secret_sauce",
-    "expected_error": "Epic sadface: Username is required"
-  },
-  {
-    "case": "valid_user_3",
-    "username": "standard_user",
-    "password": "secret_sauce",
-    "expected_error": "Epic sadface: Password is required"
-  },
+  
+  
   {
     "case": "empty_username_1",
     "username": "",
@@ -46,24 +30,6 @@
     "username": "!@#$%^",
     "password": "secret_sauce",
     "expected_error": "Epic sadface: Username and password do not match any user in this service"
-  },
-  {
-    "case": "valid_user_4",
-    "username": "standard_user",
-    "password": "secret_sauce",
-    "expected_error": "Epic sadface: Username and password do not match any user in this service"
-  },
-  {
-    "case": "valid_user_5",
-    "username": "standard_user",
-    "password": "secret_sauce",
-    "expected_error": "Epic sadface: Username is required"
-  },
-  {
-    "case": "valid_user_6",
-    "username": "standard_user",
-    "password": "secret_sauce",
-    "expected_error": "Epic sadface: Password is required"
   }
-]
+  ]
 
