@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Chamseddine-svg/UTopia_CSF_ME.git'
+                  git branch: 'main', url: 'https://github.com/Chamseddine-svg/UTopia_CSF_ME.git'
             }
         }
 
