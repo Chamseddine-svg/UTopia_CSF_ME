@@ -38,7 +38,7 @@ pipeline {
                     if (isUnix()) {
                         sh '''
                             . env/bin/activate
-                            pytest tests/selenium --maxfail=1 --capture=tee-sys --html=selenium_report.html
+                            pytest tests/selenium --capture=tee-sys --html=selenium_report.html
                         '''
                     } else {
                         bat '''
